@@ -25,10 +25,9 @@ body{
 .wrapper{
     background: var(--light-color);
     padding: 1.5rem 4rem 3rem 4rem;
-    width: 600px;
-    height: 680px;
-    border-top-left-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
+    width: 500px;
+    height: 675px;
+    border-radius: 50px;
     position: relative;
     box-shadow: 0 4px 6px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 10%);
 }
@@ -46,7 +45,7 @@ body{
     width: 100px;
     height: 50px;
     margin: .5rem auto 1rem auto;
-    color: var(--light-purple-color);
+    color: darkslategray;
 }
 .quiz-question{
     font-size: 1.2rem;
@@ -57,7 +56,7 @@ body{
 .quiz-question .category{
     font-size: 0.9rem;
     font-weight: 500;
-    background-color: var(--light-purple-color);
+    background-color: darkslategray;
     color: var(--light-color);
     padding: .2rem .4rem;
     border-radius: .2rem;
@@ -74,10 +73,10 @@ body{
     margin: .7rem 0;
     padding: .4rem 1.2rem;
     cursor: pointer;
-    border: 3px solid var(--light-purple-color);
-    background-color: var(--light-purple-color);
+    border: 3px solid darkslategray;
+    background-color: darkslategray;
     color: var(--light-color);
-    box-shadow: 0 4px 0 0 #6c4298;
+    box-shadow: 0 4px 0 0 black;
     transition: var(--transition);
 }
 .quiz-options li:hover{
@@ -137,7 +136,7 @@ body{
     line-height: 30px;
     margin-right: .5rem;
     margin-bottom: .5rem;
-    background-color: var(--light-purple-color);
+    background-color: darkslategray;
     color: var(--light-color);
 }
 
