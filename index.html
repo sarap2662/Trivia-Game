@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Trivia</title>
+    <title>Trivia Game</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel = "stylesheet" href = "main.css">
+
+    <audio autoplay>
+        <source src="/spy-164938.mp3">
+    </source>
+    </audio>
+
 </head>
 <body class = "flex">
     <style>
@@ -18,15 +24,10 @@
         }
         </style>
 
-
-<audio autoplay loop>
-    <source src="/Users/sarap/Downloads/spy-164938.mp3" type="audio/mpeg">
-</audio>
-
     <div class = "wrapper">
         <div class = "quiz-container">
             <div class = "quiz-head">
-                <h1 class = "quiz-title">Trivia Game</h1>
+                <h1 class = "quiz-title">🎬 Movie Trivia 🎬</h1>
                 <div class = "quiz-score flex">
                     <span id = "correct-score"></span>/<span id = "total-question"></span>
                 </div>
