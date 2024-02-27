@@ -140,7 +140,12 @@ body{
     color: var(--light-color);
 }
 
-
+audio{
+    position: absolute;
+    left: 25px;
+    bottom: 10px;
+    
+}
 
 
 @media(max-width: 678px){
@@ -159,3 +164,4 @@ body{
         font-size: 1rem;
     }
 }
+
