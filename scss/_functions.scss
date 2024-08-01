@@ -1,0 +1,7 @@
+@function calculate-spacing($base, $multiplier) {
+  @return $base * $multiplier;
+}
+
+@function darkn-color($color, $amount) {
+  @return darken($color, $amount);
+}
