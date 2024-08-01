@@ -1,0 +1,20 @@
+@import "variables";
+
+@media (max-width: 678px) {
+  .quiz-title {
+    font-size: 1.6rem;
+  }
+
+  .wrapper {
+    margin: 3rem 0;
+    width: 90%;
+    height: 90%;
+    padding: $padding 1rem;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .quiz-foot button {
+    font-size: 1rem;
+  }
+}

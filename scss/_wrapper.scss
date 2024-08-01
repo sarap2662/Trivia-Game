@@ -1,0 +1,130 @@
+@import "variables";
+@import "mixins";
+@import "functions";
+
+.wrapper {
+  background: $light-color;
+  padding: $padding 4rem 3rem 4rem;
+  width: 500px;
+  height: 690px;
+  border-radius: 50px;
+  position: relative;
+  @include box-shadow($shadow);
+
+  .quiz-title {
+    text-align: center;
+    font-size: $font-size-large;
+  }
+
+  .quiz-score {
+    text-align: right;
+    font-weight: 600;
+    font-size: $font-size-medium;
+    margin: 0.5rem auto 1rem auto;
+    border: 5px solid lightgray;
+    width: 100px;
+    height: 50px;
+    color: $light-purple;
+    @include border-radius($border-radius);
+    @include box-shadow(0 4px 0 0 black);
+  }
+
+  .quiz-question {
+    font-size: $font-size-medium;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+
+    .category {
+      font-size: $font-size-small;
+      font-weight: 500;
+      background-color: $light-purple;
+      color: $light-color;
+      padding: 0.2rem 0.4rem;
+      border-radius: 0.2rem;
+      margin-top: 0.5rem;
+      display: inline-block;
+    }
+  }
+
+  .quiz-options {
+    list-style-type: none;
+    margin: 1rem 0;
+
+    li {
+      border-radius: $border-radius;
+      font-weight: 600;
+      margin: 0.7rem 0;
+      padding: 0.4rem 1.2rem;
+      cursor: pointer;
+      border: 3px solid $light-purple;
+      background-color: $light-purple;
+      color: $light-color;
+      box-shadow: 0 4px 0 0 black;
+      @include transition($transition);
+
+      &:hover {
+        background-color: $grey-color;
+        color: $dark-color;
+        border-color: $grey-color;
+        box-shadow: 0 4px 0 0 #bbbbbb;
+      }
+
+      &:active {
+        transform: scale(0.97);
+      }
+    }
+  }
+
+  .quiz-foot {
+    button {
+      border: none;
+      border-radius: $border-radius;
+      outline: 0;
+      font-family: $font-family;
+      font-size: $font-size-medium;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      margin: 0 auto;
+      text-transform: uppercase;
+      cursor: pointer;
+      display: block;
+      background-color: $grey-color;
+      color: $dark-color;
+      letter-spacing: 2px;
+      @include transition($transition);
+      @include box-shadow(0 4px 0 0 #bbbbbb);
+
+      &:hover {
+        background-color: #e6e6e6;
+        @include box-shadow(0 4px 0 0 #a7a7a7);
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+
+  #play-again {
+    display: none;
+  }
+
+  #result {
+    padding: 0.7rem 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+
+    i {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      line-height: 30px;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      background-color: $light-purple;
+      color: $light-color;
+    }
+  }
+}
