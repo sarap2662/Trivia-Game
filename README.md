@@ -1,4 +1,8 @@
-Milestone Project by Sara Pena. Trivia Game 
+Milestone Project 1:
+Movie Trivia Game by Sara Pena
+
+Technologies:
+Javascript, React, HTML, CSS, SCSS
 
 Source Citations:
 GeekProbin YouTube: Quiz App using Vanilla Javascript | With Open Trivia DB API
